@@ -8,23 +8,45 @@
    href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"         
    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"         
    crossorigin="anonymous">
+   <link rel = "stylesheet" href="navStyle.css">
 
   </head>
 
   <body>
     <nav>
-      <ul>
-          <li><a href = "index.html">Home</a></li>
-          <li><a href= "headings.html">Heading Demo</a></li>
-          <li><a href= "textdemo.html">Text Demo</a></li>
-          <li><a href= "unorderedlist.html">Unordered List</a></li>
-          <li><a href= "orderedlist.html">ordered List</a></li>
-          <li><a href= "tabledemo1.html">Table Demo 1</a></li>
-          <li><a href= "tabledemo2.html">Table Demo 2</a></li>
-          <li><a href= "cssdemo.html">CSS Demo</a></li>
-          <li><a href= "travel.html">Dream Vication Page</a></li>
-          <li><a href= "bootstrapdemo.html">Bootstrap demo</a></li>
+      <ul class = "nav nav-pills nav-fill primaryNav">
+
+          <li class = 'nav-item'><a href = "index.html">Home</a></li>
+          <li class = 'nav-item'><a href= "headings.html">Heading Demo</a></li>
+          <li class = 'nav-item'><a href= "textdemo.html">Text Demo</a></li>
+          <li class = 'nav-item'><a href= "unorderedlist.html">Unordered List</a></li>
+          <li class = 'nav-item'><a href= "orderedlist.html">ordered List</a></li>
+          <li class = 'nav-item'><a href= "tabledemo1.html">Table Demo 1</a></li>
+          <li class = 'nav-item'><a href= "tabledemo2.html">Table Demo 2</a></li>
+          <li class = 'nav-item'><a href= "cssdemo.html">CSS Demo</a></li>
+          <li class = 'nav-item'><a href= "travel.html">Dream Vication Page</a></li>
+          <li class = 'nav-link active' aria-currents= 'Page'><a href= "bootstrapdemo.html">Bootstrap demo</a></li>
+          <li class = 'nav-item'><a href= "mediaQueryDemo.html">media Query Demo</a></li>
       </ul>
+      <div class="dropdown show secondaryNav">
+        <a class="btn btn-primary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Navigation List
+        </a>
+      
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+          <a class="dropdown-item" href = "index.html">Home</a>
+          <a class="dropdown-item" href= "headings.html">Heading Demo</a>
+          <a class="dropdown-item" href= "textdemo.html">Text Demo</a>
+          <a class = "dropdown-item" href= "unorderedlist.html">Unordered List</a>
+          <a class = "dropdown-item" href= "orderedlist.html">ordered List</a>
+          <a class = "dropdown-item" href= "tabledemo1.html">Table Demo 1</a>
+          <a class = "dropdown-item" href= "tabledemo2.html">Table Demo 2</a>
+          <a class = "dropdown-item" href= "cssdemo.html">CSS Demo</a>
+          <a class = "dropdown-item" href= "travel.html">Dream Vication Page</a>
+          <a class = "dropdown-item active" href= "bootstrapdemo.html">Bootstrap demo</a>
+          <a class = "dropdown-item" href= "mediaQueryDemo.html">media Query Demo</a>
+        </div>
+      </div>
     </nav>
     <!-- Bootstrap elements allow for your code to formatted into a grid (rows and columns)-->
     <!--first, make a container use a div and then use the class= "container"-->
